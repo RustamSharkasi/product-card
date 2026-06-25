@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 220px;
@@ -37,7 +44,7 @@ body {
   font-size: 13px;
   color: rgba(165, 163, 185, 1);
   margin-bottom: 10px;
-  line-height: 18px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -48,7 +55,7 @@ body {
 }
 
 .card__descr {
-  font-style: 13px;
+  font-size: 13px;
   line-height: 18px;
   margin-bottom: 15px;
 }
@@ -58,9 +65,14 @@ body {
   margin-bottom: 5px;
 }
 
+.compound__list {
+  list-style-type: circle;
+}
+
 .compound__item {
   font-size: 13px;
   margin-bottom: 5px;
+  list-style-type: circle;
 }
 
 .price {
