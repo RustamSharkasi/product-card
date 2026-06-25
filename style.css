@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 220px;
@@ -23,63 +30,74 @@ body {
   padding: 25px;
 }
 
-.card-img {
+.card__img {
   margin: 0 auto;
   max-width: 290px;
   margin-bottom: 30px;
 }
 
-.card-img img {
+.card__img img {
   width: 100%;
 }
 
-.card-subtitle {
-  font-size: 12px;
+.card__subtitle {
+  font-size: 13px;
   color: rgba(165, 163, 185, 1);
   margin-bottom: 10px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
-.card-title {
+.card__title {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 7px;
 }
 
-.card-descr {
-  font-style: 13px;
+.card__descr {
+  font-size: 13px;
   line-height: 18px;
   margin-bottom: 15px;
 }
 
-.card-compound-text {
+.compound__text {
   font-style: 13px;
   margin-bottom: 5px;
 }
 
-.card-compound-item {
-  font-size: 13px;
-  margin-bottom: 5px;
+.compound__list {
+  list-style-type: circle;
 }
 
-.card-price-wrapper {
+.compound__item {
+  font-size: 13px;
+  margin-bottom: 5px;
+  list-style-type: circle;
+}
+
+.price {
   display: flex;
   justify-content: space-between;
 }
 
-.card-price-text {
+.price__text {
   font-weight: 700;
   font-size: 20px;
 }
 
-.card-price {
+.price__value {
   font-size: 20px;
 }
 
-.product-cards {
+.products {
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
   justify-content: center;
+}
+
+.product__item {
+  width: 340px;
 }
 
 .dandelision {
