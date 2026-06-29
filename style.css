@@ -113,14 +113,14 @@ body {
   justify-content: space-between;
 }
 
+.container__buttons button.red-button {
+  background-color: #ff7e7e;
+  color: white;
+}
+
 .container__buttons button {
   font-size: 16px;
   height: 80px;
   width: 200px;
   background-color: #fff;
-}
-
-.red-button {
-  background-color: #ff7e7e;
-  color: white;
 }

@@ -69,4 +69,4 @@ const changeColorButton = document.querySelector('#change-color-button')
 
 changeColorButton.addEventListener('click', () => {
   changeColorButton.classList.toggle('red-button')
-});
+})
