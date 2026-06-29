@@ -1,12 +1,12 @@
 //Покраска всех карточек
 
 const productCards = document.querySelectorAll('.card');
-const changeColorAllCard = document.querySelector('#change-color-all-card');
-const greenColorHash = '#00ff00';
-const blueColorHash = '#0000ff';
+const changeColorAllCards = document.querySelector('#change-color-all-cards');
+const greenColorHash = '#45fd45';
+const blueColorHash = '#ff7e7e';
 const googleURL = 'https://google.com';
 
-changeColorAllCard.addEventListener('click', () => {
+changeColorAllCards.addEventListener('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
 })
 
@@ -46,7 +46,7 @@ function openGoogle() {
 
 const outputLogButton = document.querySelector('#output-console-log');
 
-outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №4'))
+outputLogButton.addEventListener('click', () => outputConsoleLog('ДЗ №6'))
 
 function outputConsoleLog(massege) {
   alert(massege)
@@ -57,9 +57,9 @@ function outputConsoleLog(massege) {
 
 const titleElement = document.querySelector('.container__title')
 
-titleElement.addEventListener('mouseover', () => titleConsoleLog('Выбери свой продукт'))
+titleElement.addEventListener('mouseover', () => logTitle('Выбери свой продукт'))
 
-function titleConsoleLog(massege) {
+function logTitle(massege) {
   console.log(massege)
 }
 
