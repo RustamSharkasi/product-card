@@ -57,10 +57,10 @@ function outputConsoleLog(massege) {
 
 const titleElement = document.querySelector('.container__title')
 
-titleElement.addEventListener('mouseover', () => logTitle('Выбери свой продукт'))
+titleElement.addEventListener('mouseover', logTitle)
 
-function logTitle(massege) {
-  console.log(massege)
+function logTitle() {
+  console.log(titleElement.textContent)
 }
 
 // Добовляем кнопку меняющую цвет при нажатии
