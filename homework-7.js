@@ -1,8 +1,8 @@
-const showTempSity = (sity, temp) => {
-  console.log(`Сейчас в ${sity} температура — ${temp} градусов по Цельсию`);
+const showTempCity = (city, temp) => {
+  console.log(`Сейчас в городе ${city} температура — ${temp} градусов по Цельсию`);
 };
 
-showTempSity('Medina', '38');
+showTempCity('Medina', '38');
 
 const LIGHT_SPEED = 299;
 
@@ -30,3 +30,13 @@ function saleProduct(budget) {
 }
 
 saleProduct(40);
+
+function calcPerc(a, b) {
+  console.log(`${b}%  от числа ${a} равен ${a * b / 100}%`);
+};
+
+calcPerc(200, 25);
+
+const speed = '250км/ч';
+let dist = '12000км';
+var hour = '24ч';
