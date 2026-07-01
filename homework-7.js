@@ -19,7 +19,7 @@ function checkSpeed(speed) {
 checkSpeed(300);
 
 let product = 'Хлеб';
-const price = 50;
+let price = 50;
 
 function saleProduct(budget) {
   if (budget >= price) {
