@@ -1,32 +1,32 @@
 const showTempSity = (sity, temp) => {
-  console.log(`Сейчас в ${sity} температура — ${temp} градусов по Цельсию`)
-}
+  console.log(`Сейчас в ${sity} температура — ${temp} градусов по Цельсию`);
+};
 
-showTempSity('Medina', '38')
+showTempSity('Medina', '38');
 
-const LIGHT_SPEED = 299
+const LIGHT_SPEED = 299;
 
 function checkSpeed(speed) {
   if (speed > LIGHT_SPEED) {
-    console.log('Сверхсветовая скорость')
+    console.log('Сверхсветовая скорость');
   } else if (speed === LIGHT_SPEED) {
-    console.log('Скорость света')
+    console.log('Скорость света');
   } else {
-    console.log('Субсветовая скорость')
+    console.log('Субсветовая скорость');
   }
 }
 
-checkSpeed(300)
+checkSpeed(300);
 
-let product = 'Хлеб'
-const price = 50
+let product = 'Хлеб';
+const price = 50;
 
-function checkBudget(budget) {
+function saleProduct(budget) {
   if (budget >= price) {
-    console.log(`${product} приобретён. Спасибо за покупку!`)
+    console.log(`${product} приобретён. Спасибо за покупку!`);
   } else {
-    console.log(`Вам не хватает ${price - budget}, пополните баланс`)
+    console.log(`Вам не хватает ${price - budget}, пополните баланс`);
   }
 }
 
-checkBudget(40)
+saleProduct(40);
