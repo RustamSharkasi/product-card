@@ -32,7 +32,7 @@ function saleProduct(budget) {
 saleProduct(40);
 
 function calcPerc(a, b) {
-  console.log(`${b}%  от числа ${a} равен ${a * b / 100}%`);
+  console.log(`${b}%  от числа ${a} равен ${a * b / 100}`);
 };
 
 calcPerc(200, 25);
