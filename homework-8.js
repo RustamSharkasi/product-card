@@ -16,12 +16,10 @@ const person = {
 const myAuto = {
   brand: 'Hyundai',
   model: 'Sonata',
-
   year: 2004,
-
   color: 'White',
   transmission: 'Automatic',
-  maxspeed: 240
+  maxSpeed: 240
 };
 
 myAuto.owner = person;
@@ -29,22 +27,22 @@ myAuto.owner = person;
 // Задание 5. Функция с проверкой макс.скорости
 
 function checkMaxSpeed(auto) {
-  if ('maxspeed' in auto) {
+  if ('maxSpeed' in auto) {
     return;
   };
-  auto.maxspeed = 200;
+  auto.maxSpeed = 200;
 };
 
 checkMaxSpeed(myAuto);
 console.log(myAuto);
 
-// Задание 6.
+// Задание 6. Выводим свойство объекта
 
-function showPropertyValue(auto, propertyValue) {
-  console.log(auto[propertyValue])
+function getObjectProperty(object, propertyKey) {
+  console.log(object[propertyKey])
 };
 
-showPropertyValue(myAuto, 'model');
+getObjectProperty(myAuto, 'model');
 
 
 // Задание 7. Создаем массив книг
@@ -129,13 +127,12 @@ console.log(uniteBooks);
 
 // Задание 9. Применение метода map.
 
-let chekRareBooks = uniteBooks.map(function (book) {
+let addRareBooks = uniteBooks.map(function (book) {
   return {
     ...book,
     isRare: book.
       year < 1850
-
   };
 });
 
-console.log(chekRareBooks);
+console.log(addRareBooks);
