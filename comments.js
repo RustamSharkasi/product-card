@@ -1,4 +1,4 @@
-// Уровень 2. Задание 5-6.
+// Уровень 2. Задание 5.
 
 export const comments = [
   {
@@ -72,62 +72,3 @@ export const comments = [
     body: "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
   }
 ];
-
-// Уровень 2. Задание 7.
-
-console.log(comments.filter(comment => comment.email.includes('.com')));
-
-// Уровень 2. Задание 8.
-
-const changePostId = comments.map(comment => {
-  return {
-    ...comment,
-    postId: comment.id <= 5 ? 2 : 1
-  };
-});
-
-console.log(changePostId);
-
-// Уровень 2. Задание 9.
-
-const idNameComments = comments.map(comment => {
-  return {
-    id: comment.id,
-    name: comment.name
-  };
-});
-
-console.log(idNameComments);
-
-// Уровень 2. Задание 10.
-
-const addIsInvalid = comments.map(comment => {
-  return {
-    ...comment,
-    isInvalid: comment.body.length > 180
-  };
-});
-
-console.log(addIsInvalid);
-
-// Уровень 3. Задание 11.
-
-const userEmails = comments.reduce((result, user) => {
-  result.push(user.email);
-  return result;
-}, []);
-
-const userEmails2 = comments.map(user => {
-  return (user.email)
-});
-
-console.log(userEmails);
-console.log(userEmails2);
-
-// Уровень 3. Задание 12.
-
-const userEmailsStr = userEmails.join();
-const userEmailsStr2 = userEmails.join();
-
-console.log(userEmailsStr);
-console.log(userEmailsStr2);
