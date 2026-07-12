@@ -6,19 +6,19 @@ import { comments } from "./comments.js";
 
 const nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let filterFromFive = nambers.filter(function (namber) {
+let filteredFromFive = nambers.filter(function (namber) {
   return namber >= 5;
 });
 
-console.log(filterFromFive);
+console.log(filteredFromFive);
 
 // Уровень 1. Задание 3.
 
 const products = ['Картошка', 'Капуста', 'Помидор', 'Марковка', 'Свекла', 'Редиска'];
 
-let findMarking = products.includes("Свекла");
+let hasProduct = products.includes("Свекла");
 
-console.log(findMarking)
+console.log(hasProduct)
 
 // Уровень 1. Задание 4.
 
@@ -33,36 +33,36 @@ console.log(comments.filter(comment => comment.email.includes('.com')));
 
 // Уровень 2. Задание 8.
 
-const changePostId = comments.map(comment => {
+const changedByPostId = comments.map(comment => {
   return {
     ...comment,
     postId: comment.id <= 5 ? 2 : 1
   };
 });
 
-console.log(changePostId);
+console.log(changedByPostId);
 
 // Уровень 2. Задание 9.
 
-const idNameComments = comments.map(comment => {
+const commentName = comments.map(comment => {
   return {
     id: comment.id,
     name: comment.name
   };
 });
 
-console.log(idNameComments);
+console.log(commentName);
 
 // Уровень 2. Задание 10.
 
-const addIsInvalid = comments.map(comment => {
+const validatedComments = comments.map(comment => {
   return {
     ...comment,
     isInvalid: comment.body.length > 180
   };
 });
 
-console.log(addIsInvalid);
+console.log(validatedComments);
 
 // Уровень 3. Задание 11.
 
