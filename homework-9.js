@@ -44,14 +44,14 @@ console.log(changedByPostId);
 
 // Уровень 2. Задание 9.
 
-const commentName = comments.map(comment => {
+const commentNames = comments.map(comment => {
   return {
     id: comment.id,
     name: comment.name
   };
 });
 
-console.log(commentName);
+console.log(commentNames);
 
 // Уровень 2. Задание 10.
 
