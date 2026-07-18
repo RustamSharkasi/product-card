@@ -48,4 +48,4 @@ const cardNamesAndDescr = productCards.reduce((result, product) => {
   return result
 }, []);
 
-console.log(cardNamesAndDescr); 3
+console.log(cardNamesAndDescr);
