@@ -8,7 +8,7 @@ const productTemplate = document.getElementById('product-template');
 const productList = document.getElementById('product-list');
 
 function getCardsCount() {
-  while (true) {
+  for (; ;) {
     const count = Number(prompt("Сколько карточек отобразить? От 1 до 5"));
     if (count >= 1 && count <= 5) {
       return count;
@@ -24,7 +24,7 @@ console.log(productCards.slice(0, count));
 function renderCards(productCards) {
   productCards.forEach(product => {
     const productClone = productTemplate.content.cloneNode(true);
-    productClone.querySelector('.card__img').src = product.image
+    productClone.querySelector('.card__img').src = `./img/${product.image}.png`
     productClone.querySelector('.card__img').alt = product.title
     productClone.querySelector('.card__subtitle').textContent = product.subtitle
     productClone.querySelector('.card__title').textContent = product.title
@@ -48,4 +48,4 @@ const cardNamesAndDescr = productCards.reduce((result, product) => {
   return result
 }, []);
 
-console.log(cardNamesAndDescr);
+console.log(cardNamesAndDescr); 3
