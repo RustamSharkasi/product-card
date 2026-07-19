@@ -29,11 +29,17 @@ function renderCards(productCards) {
     productClone.querySelector('.card__subtitle').textContent = product.subtitle
     productClone.querySelector('.card__title').textContent = product.title
     productClone.querySelector('.card__descr').textContent = product.description
-    productClone.querySelector('.compound__item1').textContent = product.compound1
-    productClone.querySelector('.compound__item2').textContent = product.compound2
-    productClone.querySelector('.compound__item3').textContent = product.compound3
     productClone.querySelector('.price__value').textContent = `${product.priceValue} \u20BD`
-    productList.appendChild(productClone)
+
+    const compoundsList = productClone.querySelector('.compound__list');
+    product.compounds.forEach(compound => {
+      const li = document.createElement('li');
+      li.className = 'compound__list'
+      li.textContent = compound;
+      compoundsList.appendChild(li);
+    });
+
+    productList.appendChild(productClone);
     console.log(productList);
   })
 };
