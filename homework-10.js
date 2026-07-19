@@ -24,12 +24,12 @@ console.log(productCards.slice(0, count));
 function renderCards(productCards) {
   productCards.forEach(product => {
     const productClone = productTemplate.content.cloneNode(true);
-    productClone.querySelector('.card__img').src = `./img/${product.image}.png`
-    productClone.querySelector('.card__img').alt = product.title
-    productClone.querySelector('.card__subtitle').textContent = product.subtitle
-    productClone.querySelector('.card__title').textContent = product.title
-    productClone.querySelector('.card__descr').textContent = product.description
-    productClone.querySelector('.price__value').textContent = `${product.priceValue} \u20BD`
+    productClone.querySelector('.card__img').src = `./img/${product.image}.png`;
+    productClone.querySelector('.card__img').alt = product.title;
+    productClone.querySelector('.card__subtitle').textContent = product.subtitle;
+    productClone.querySelector('.card__title').textContent = product.title;
+    productClone.querySelector('.card__descr').textContent = product.description;
+    productClone.querySelector('.price__value').textContent = `${product.priceValue} \u20BD`;
 
     const compoundsList = productClone.querySelector('.compound__list');
     product.compounds.forEach(compound => {
