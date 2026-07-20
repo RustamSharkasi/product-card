@@ -18,8 +18,6 @@ function getCardsCount() {
 };
 
 const count = getCardsCount();
-console.log(count);
-console.log(productCards.slice(0, count));
 
 function renderCards(productCards) {
   productCards.forEach(product => {
@@ -40,7 +38,6 @@ function renderCards(productCards) {
     });
 
     productList.appendChild(productClone);
-    console.log(productList);
   })
 };
 
